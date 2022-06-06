@@ -1,0 +1,78 @@
+@import '../styles/colors.scss';
+
+section {
+  height: 100vh;
+  background-color: $bg-dark;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  color: white;
+
+  header {
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h2,
+    p {
+      text-align: center;
+      letter-spacing: .025em;
+
+      a {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  form {
+    color: $text;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 460px;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+
+    input {
+      border-radius: .5rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: .5rem;
+      border: 1px solid $light-gray;
+    }
+
+    input[type="checkbox"] {
+      margin-right: .25rem;
+    }
+
+    input[type="submit"] {
+      padding: .5rem 0;
+      background-color: $primary-saturated;
+      color: white;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .additional-controls-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .primary-text {
+    color: $primary;
+  }
+}

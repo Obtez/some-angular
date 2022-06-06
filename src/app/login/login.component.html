@@ -1,0 +1,28 @@
+<section>
+  <header>
+    <h2>Sign in to your account</h2>
+    <p>Or <a routerLink="/trial" title="Trial">start your 14-day free trial</a></p>
+  </header>
+  <form>
+    <label for="email">Email address
+      <input type="text" id="email" name="email">
+    </label>
+    <label for="password">Password
+      <input type="password" id="password" name="password">
+    </label>
+
+    <div class="additional-controls-container">
+      <label for="remember">
+      <input type="checkbox" id="remember" name="remember">
+      Remember me
+    </label>
+
+      <a class="primary-text">Forgot your password?</a>
+    </div>
+
+    <input type="submit" value="Sign in">
+
+    <app-spacer text="Or continue with"></app-spacer>
+    <app-social-buttons></app-social-buttons>
+  </form>
+</section>
