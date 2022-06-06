@@ -1,0 +1,49 @@
+@import "../styles/colors";
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-dark;
+  color: $text-muted;
+
+  .topbar-left {
+    display: flex;
+    gap: 2rem;
+
+    .logo-container {
+      color: $primary;
+      font-weight: 700;
+    }
+
+
+
+    ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    padding: .5rem .75rem;
+  }
+
+  a.nav-link {
+    &:hover {
+      background-color: $bg-lighter;
+      color: white;
+      border-radius: .5rem;
+    }
+
+    &.active-page {
+      background-color: $bg-darker;
+      color: white;
+    }
+  }
+}
+
