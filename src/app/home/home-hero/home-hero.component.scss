@@ -1,0 +1,37 @@
+@import "../../styles/colors";
+
+header {
+  padding: 0 5rem;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 10rem;
+  background-color: $bg-dark;
+  color: white;
+
+  .accent {
+    color: $primary;
+  }
+}
+
+.hero-description-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1rem;
+
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+  }
+
+  p {
+    color: $text-muted;
+  }
+}
+
+.signup-form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
