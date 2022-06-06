@@ -1,0 +1,18 @@
+@import "../styles/colors";
+
+.spacer {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: $text-disabled;
+  margin: 1.5rem 0;
+
+  p {
+    white-space: nowrap;
+  }
+
+  hr {
+    width: 100%;
+    background-color: $light-gray;
+  }
+}
