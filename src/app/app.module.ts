@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopbarComponent } from './topbar/topbar.component';
+import { TopbarComponent } from './layout/topbar.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeHeroComponent } from './home/home-hero/home-hero.component';
@@ -17,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { SocialButtonsComponent } from './social-buttons/social-buttons.component';
 import { SpacerComponent } from './spacer/spacer.component';
 import { TrialOfferComponent } from './trial-offer/trial-offer.component';
+import { FooterComponent } from './layout/footer.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { TrialOfferComponent } from './trial-offer/trial-offer.component';
     LoginComponent,
     SocialButtonsComponent,
     SpacerComponent,
-    TrialOfferComponent
+    TrialOfferComponent,
+    FooterComponent,
+    LayoutComponent
   ],
     imports: [
         BrowserModule,
